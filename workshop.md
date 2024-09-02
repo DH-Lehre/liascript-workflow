@@ -95,9 +95,10 @@ Im Ergebnis erhält man ein *Rendering* des eigenen Kurses, dass dann bspw. mit 
 
 ### CAU Webservice
 
-Es gab probeweise einen [LiaScript Webservice vom RZ](https://vm077.test.rz.uni-kiel.de/), der nur aus dem Uni-Netz erreichbar war. Der Service lief nicht stabil und war nicht gewartet; inzwischen ist sein HTTPS-Zertifikat abgelaufen und kann damit nicht mehr verwendet werden.
+Es gibt probeweise einen [LiaScript Webservice vom RZ](https://vm077.test.rz.uni-kiel.de/), der nur aus dem Uni-Netz erreichbar ist. Der Service läuft nicht  sehr stabil und wird nicht regelmäßig gewartet.
 
-![HTTPS :(](img/vm-am-rz.png)
+Es ist möglicherweise nicht klug ihn zu verwenden.
+
 
 ### Statische Website(n)
 
