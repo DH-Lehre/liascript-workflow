@@ -73,7 +73,7 @@ Die CAU Cloud bzw. OwnCloud stellt einen Desktop-Client zur Verfügung, der die 
 
 ### git und Github
 
-Noch eine bessere Möglichkeit der Zusammenarbeit bieten git und Github. 
+Noch eine bessere Möglichkeit der Zusammenarbeit bieten das Versionskontrollsystem Git und die darauf aufbauende webbasierte Plattform Github. 
 
 VS Code bietet von Hause aus die Möglichkeit eigene Projekte mit git zu verwalten. Dafür ist die vorherige Installation eines [git Clients](https://git-scm.com/downloads) nötig. 
 
