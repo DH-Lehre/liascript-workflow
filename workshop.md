@@ -55,7 +55,7 @@ window.isSubSet = function(A, B) {
 
 Um einen ersten Eindruck zu erhalten: Das in GitHub veröffentlichte Repository [LiaBooks](https://github.com/LiaBooks) enthält eine Sammlung an mit LiaScript interaktiv gestalteten Open Educational Resources. Es lohnt sich auf jeden Fall, sich dort ein wenig umzuschauen. :-)
 
->Dieser kurze Workshop soll einen Orientierungsrahmen für den persönlichen Workflow in LiaScript geben – vom Editieren mit VS-Code, über die Erstellung einfacher Inhalte mit der Markdown-Syntax und die Integration interaktiver Elemente, bis zum kollaborativen Arbeiten und Publizieren.
+>Dieser kurze Workshop soll einen Orientierungsrahmen für den persönlichen LiaScript-Workflow geben – vom Editieren mit VS-Code, über die Erstellung einfacher Inhalte mit der Markdown-Syntax und die Integration interaktiver Elemente, bis zum kollaborativen Arbeiten und Publizieren.
 
 Bei Nachfragen wendet Euch gerne an ...
 
