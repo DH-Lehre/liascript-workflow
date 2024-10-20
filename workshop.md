@@ -47,12 +47,9 @@ window.isSubSet = function(A, B) {
 # LiaScript Workflow-Workshop
 
 
-![Workflow - Symboldbild](img/alvaro-reyes-qWwpHwip31M-unsplash.jpg) "Foto von <a href="https://unsplash.com/de/@alvarordesign?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alvaro Reyes</a> auf <a href="https://unsplash.com/de/fotos/person-die-an-bord-an-blauem-und-weissem-papier-arbeitet-qWwpHwip31M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>")
+![Workflow - Symbolbild](img/alvaro-reyes-qWwpHwip31M-unsplash.jpg "Foto von <a href="https://unsplash.com/de/@alvarordesign?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alvaro Reyes</a> auf <a href="https://unsplash.com/de/fotos/person-die-an-bord-an-blauem-und-weissem-papier-arbeitet-qWwpHwip31M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>")
 
 ## Arbeiten mit LiaScript 
-
-![...](Microsoft.VisualStudio.Services.Icons.Default)
-
 
 >Mit [LiaScript](https://liascript.github.io/) lassen sich interaktive Kurse und Lerninhalte erstellen und kollaborativ weiterentwickeln. Anstatt lediglich statische Inhalte zu präsentieren, ermöglicht die Software die Einbindung interaktiver Elemente wie Quizze, Simulationen und sogar Programmierumgebungen – und das alles in einer auf Markdown basierenden, für Kursentwickelnde recht intuitiv zugänglichen Syntax. Durch die flexible interaktive Gestaltung eignet sich die Verwendung von LiaScript besonders gut für didaktische Aufarbeitungen - von Selbstlernkursen bis hin zu interaktiven Workshops.
 
@@ -72,7 +69,7 @@ Im Folgenden ein paar erste Hinweise zur Navigation in VS Code...
 
 ### Überblick über die Benutzeroberfläche
 
-![...](img/Benutzeroberflaeche_VSCode_img.png)
+![Benutzeroberfläche VSCode - Screenshot](img/Benutzeroberflaeche_VSCode_img.png)
 
 Beim Start von VS Code gelangen Sie auf eine funktionsreiche Benutzeroberfläche,welche in die folgenden Bereiche aufgeteilt ist:
 
@@ -248,7 +245,7 @@ Beispiel:
 ```markdown
 <!--
 author: beispielname
-email:  beispielname@gmx.de
+email:  beispielname@mail.de
 version: 0.1
 language: en
 narrator: UK English Female
@@ -290,7 +287,10 @@ Ihre Website können Sie durch Verwendung von Hashtags in Sections (#) und Subse
 ...
 ```
 
-Lokale Untertitel innerhalb einer Section lassen sich durch das Einfügen von Bindestrichen in der Zeile unter dem Untertitel konfigurieren:
+Lokale Untertitel innerhalb einer Section lassen sich durch das Einfügen von mindestens drei Gleichheitszeichen oder Bindestrichen in der Zeile unter dem Untertitel konfigurieren:
+
+Dies ist ein Untertitel
+-----------------------
 
 ```markdown 
 Dies ist ein Untertitel
@@ -316,7 +316,7 @@ Textblöcke
 
 <!-- style="background-color: lightgreen;"-->
 >
-> Auch die Hintergrundfarbe lässt sich einstellen, indem Sie folgenden Code vor den Textblock setzen:
+> Auch die Hintergrundfarbe lässt sich einstellen, indem Sie folgenden HTML-Kommentar vor den Textblock setzen:
 >
 > ```markdown
 > <!-- style="background-color: lightgreen;"-->
