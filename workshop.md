@@ -1,6 +1,6 @@
 <!--
 
-author: Gregor Große-Bölting
+authors: Gregor Große-Bölting, Aina-Jula Stehr
 email:  ggb@informatik.uni-kiel.de
 version: 0.1
 language: en
@@ -46,12 +46,15 @@ window.isSubSet = function(A, B) {
 
 # LiaScript Workflow-Workshop
 
-
 ![Workflow - Symbolbild](img/alvaro-reyes-qWwpHwip31M-unsplash.jpg "Foto von <a href="https://unsplash.com/de/@alvarordesign?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alvaro Reyes</a> auf <a href="https://unsplash.com/de/fotos/person-die-an-bord-an-blauem-und-weissem-papier-arbeitet-qWwpHwip31M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>")
 
 ## Arbeiten mit LiaScript 
 
->Mit [LiaScript](https://liascript.github.io/) lassen sich interaktive Kurse und Lerninhalte erstellen und kollaborativ weiterentwickeln. Anstatt lediglich statische Inhalte zu präsentieren, ermöglicht die Software die Einbindung interaktiver Elemente wie Quizze, Simulationen und sogar Programmierumgebungen – und das alles in einer auf Markdown basierenden, für Kursentwickelnde recht intuitiv zugänglichen Syntax. Durch die flexible interaktive Gestaltung eignet sich die Verwendung von LiaScript besonders gut für didaktische Aufarbeitungen - von Selbstlernkursen bis hin zu interaktiven Workshops.
+>Mit [LiaScript](https://liascript.github.io/) lassen sich interaktive Kurse und Lerninhalte erstellen und kollaborativ weiterentwickeln. 
+>
+>Anstatt lediglich statische Inhalte zu präsentieren, ermöglicht die Software die Einbindung interaktiver Elemente wie Quizze, Simulationen und sogar Programmierumgebungen – und das alles in einer auf Markdown basierenden, für Kursentwickelnde recht intuitiv zugänglichen Syntax. 
+>
+>Durch die flexible interaktive Gestaltung eignet sich die Verwendung von LiaScript besonders gut für didaktische Aufarbeitungen - von Selbstlernkursen bis hin zu interaktiven Workshops.
 
 Um einen ersten Eindruck zu erhalten: Das in GitHub veröffentlichte Repository [LiaBooks](https://github.com/LiaBooks) enthält eine Sammlung an mit LiaScript interaktiv gestalteten Open Educational Resources. Es lohnt sich auf jeden Fall, sich dort ein wenig umzuschauen. :-)
 
@@ -61,9 +64,10 @@ Bei Nachfragen wendet Euch gerne an ...
 
 
 ## Editieren: VS Code (oder Atom)
-Falls Sie erst einmal ein paar Probeversuche starten und sich einen Eindruck über die LiaScript-Synatx verschaffen wollen, eignet sich zunächst der [Web Editor](https://github.dev/) von LiaScript.
 
-Für das lokale Editieren von Markdown-Dateien ist ein *Plain Text*-Editor notwendig, wie bspw. [Visual Studio Code (VS Code)](https://code.visualstudio.com/), der als Open Source-Software entwickelt wird und kostenlos installierbar ist.
+![let's try](/img/umit-y-buz-Tw5TbEAQ1So-unsplash.jpg "Foto von [Umit Y Buz](https://unsplash.com/de/@umitybuz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) auf [Unsplash](https://unsplash.com/de/fotos/person-in-schwarz-weissen-turnschuhen-Tw5TbEAQ1So?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)") Falls Sie erst einmal ein paar Probeversuche starten und sich einen Eindruck über die LiaScript-Synatx verschaffen wollen, eignet sich zunächst der [Web Editor](https://github.dev/) von LiaScript.
+
+>Für das lokale Editieren von Markdown-Dateien ist ein *Plain Text*-Editor notwendig, wie bspw. [Visual Studio Code (VS Code)](https://code.visualstudio.com/), der als Open Source-Software entwickelt wird und kostenlos installierbar ist.
 
 Im Folgenden ein paar erste Hinweise zur Navigation in VS Code...
 
@@ -71,11 +75,13 @@ Im Folgenden ein paar erste Hinweise zur Navigation in VS Code...
 
 ![Benutzeroberfläche VSCode - Screenshot](img/Benutzeroberflaeche_VSCode_img.png)
 
-Beim Start von VS Code gelangen Sie auf eine funktionsreiche Benutzeroberfläche,welche in die folgenden Bereiche aufgeteilt ist:
+Bei dem Start von VS Code gelangen Sie auf eine funktionsreiche Benutzeroberfläche, welche in die folgenden Bereiche aufgeteilt ist:
 
+<br>
 
-1. **activity bar (Aktivitätsleiste)**
-Die Activity Bar befindet sich ganz links und enthält die Symbole für verschiedenen Ansichten in VS Code:
+1. **Activity bar (Aktivitätsleiste)**
+
+    Die Activity Bar befindet sich ganz links und enthält die Symbole für verschiedenen Ansichten in VS Code:
 
 - Der _Explorer_ 📁 zeigt den Dateibaum Ihres Projekts an. Hier können Sie Ihre Dateien verwalten und das Projektverzeichnis durchsuchen.
 
@@ -83,68 +89,92 @@ Die Activity Bar befindet sich ganz links und enthält die Symbole für verschie
 
 - Gleich darunter finden Sie die _Versionskontrolle_, wo Sie mithilfe eines Versionskontrollsystems wie GIT Änderungen in Ihren Dokumenten nachverfolgen und im Falle eines kollaborativen Arbeitens committen können. Hierzu später mehr...
 
-- Durch einen Klick auf das _"Run and Debug"_-Symbol ▶️ lassen sich der Debugger starten und Debug-Informationen anzeigen. Die „Run and Debug“-Funktion ist ein Werkzeug zur Ausführung (Run) und Fehlerbeseitugung (Debug) von Programmen. Entwickler*innen erhalten hier die Möglichkeit ihren Code in klassischen Programmiersprachen (Java, C++, ...) direkt in VS Code auszuführen, Fehler zu finden und das Verhalten des Programms zu analysieren, ohne den Editor zu verlassen. 
-  Für die Arbeit mit LiaScript sind diese Funktionen allerdings weniger relevant, denn LiaScript wird in einem Webbrowser ausgeführt, der die erstellten interaktiven Inhalte direkt rendert. Sie nutzen hierfür vorrangig den Developement-Server (Dev-Server), in dem die Änderungen als Echtzeit-Website-Vorschau sofort anzeigt werden, wodurch Sie eine schnelle Feedback-Schleife erhalten.
+- Durch einen Klick auf das _"Run and Debug"_-Symbol ▶️ lassen sich der Debugger starten und Debug-Informationen anzeigen. 
 
-- Unter dem darunterstehenden Symbol, lassen sich _Extensions_ suchen und installieren, mit denen Sie VS Code durch Plugins erweitern und so an Ihren Workflow anpassen können.
+    Die „Run and Debug“-Funktion ist ein Werkzeug zur Ausführung (Run) und Fehlerbeseitugung (Debug) von Programmen. Entwickler*innen erhalten hier die Möglichkeit, ihren Code in klassischen Programmiersprachen (Java, C++, ...) direkt in VS Code auszuführen, Fehler zu finden und das Verhalten des Programms zu analysieren, ohne den Editor zu verlassen. 
+  
+    Für die Arbeit mit LiaScript sind diese Funktionen allerdings weniger relevant, denn LiaScript wird in einem Webbrowser ausgeführt, der die erstellten interaktiven Inhalte direkt rendert. Sie nutzen hierfür vorrangig den Developement-Server (Dev-Server), in dem die Änderungen als Echtzeit-Website-Vorschau sofort anzeigt werden, wodurch Sie eine schnelle Feedback-Schleife erhalten.
 
-- Der _Remote Explorer_ (Bildschirmsymbol) ist ein Werkzeug, welches Ihnen ermöglicht, auf entfernte Entwicklungsumgebungen zuzugreifen und dort zu arbeiten.
+- Unter dem darunterstehenden Symbol lassen sich _Extensions_ suchen und installieren, mit denen Sie VS Code durch Plugins erweitern und so an Ihren Workflow anpassen können.
 
+- Der _Remote Explorer_ (Bildschirmsymbol) ist ein Werkzeug, welches es Ihnen ermöglicht, auf entfernte Entwicklungsumgebungen zuzugreifen und dort zu arbeiten.
+
+----------
 
 2. **Sidebar (Seitenleiste)**
-Die Seitenleiste zeigt den Inhalt an, der mit den Symbolen in der Activity Bar verknüpft ist. Standardmäßig wird hier der Dateiexplorer angezeigt. (Shortcut: Ctrl + B)
 
+    Die Seitenleiste zeigt den Inhalt an, der mit den Symbolen in der Activity Bar verknüpft ist. Standardmäßig wird hier der Dateiexplorer angezeigt. (Shortcut: Ctrl + B)
+
+----------
 
 3. **Editor**
-Der Editor befindet sich mittig und ist der Hauptbereich, in dem Sie Dateien öffnen und bearbeiten können. Sie können mehrere Dateien in Registerkarten öffnen und zwischen diesen wechseln. 
 
-Der Breadcrumb-Leiste oberhalb der Datei zeigt Ihnen zur Navigations-Erleichterung den Pfad zur Datei sowie den aktuellen Strukturnamen in der Datei an. Zum Ein- und Ausschalten: Öffnen Sie die Einstellungen (entweder über das Zahnrad-Symbol unten links oder mit dem Shortcut Ctrl + , bzw. Cmd + , auf macOS), suchen Sie nach „Breadcrumbs“ und aktivieren oder deaktivieren Sie die Option „Breadcrumbs: Enable“.
+    Der Editor befindet sich mittig und ist der *Hauptbereich*, in dem Sie Dateien öffnen und bearbeiten können. Sie können mehrere Dateien in Registerkarten öffnen und zwischen diesen wechseln. 
 
+    Die *Breadcrumb-Leiste* oberhalb der Datei zeigt Ihnen zur Navigations-Erleichterung den Pfad zur Datei sowie den aktuellen Strukturnamen in der Datei an. 
+    Zum Ein- und Ausschalten: Öffnen Sie die Einstellungen (entweder über das Zahnrad-Symbol unten links oder mit dem Shortcut Ctrl + , bzw. Cmd + , auf macOS), suchen Sie nach „Breadcrumbs“ und aktivieren oder deaktivieren Sie die Option „Breadcrumbs: Enable“.
+
+--------------
 
 4. **Minimap**
-Rechts im Editor befindet sich die Minimap: Eine verkleinerte Vorschau des Quellcodes. Sie ermöglicht eine Übersicht über den Code und ein schnelles Scrollen und Navigieren innerhalb des Dokuments.
 
+    Rechts im Editor befindet sich die Minimap: Eine verkleinerte Vorschau des Quellcodes. Sie ermöglicht eine Übersicht über den Code und ein schnelles Scrollen und Navigieren innerhalb des Dokuments.
+
+--------------
 
 5. **Panel**
-Im unteren Bereich des Fensters befindet sich das Panel. Falls aktuell nicht eingeblendet: Ctrl + J (für Windows/Linux), Cmd + J (für macOS) oder vom unteren Rand des Editos hochziehen. Hier werden verschiedene Informationen und Werkzeuge angezeigt:
 
-- Ein integriertes _Terminal_, um Befehle auszuführen, ohne VS Code zu verlassen.
-- Ausgabe: Zeigt Debug-Informationen, Ausgaben von Programmen und Log-Meldungen.
-- Probleme: Zeigt Probleme, wie Fehler oder Warnungen im Code.
-- Debug-Konsole: Wird während des Debuggens genutzt, um Debugging-Ausgaben anzuzeigen.
+    Im unteren Bereich des Fensters befindet sich das Panel. Falls aktuell nicht eingeblendet: Ctrl + J (für Windows/Linux), Cmd + J (für macOS) oder vom unteren Rand des Editos hochziehen. 
 
+    Hier werden verschiedene Informationen und Werkzeuge angezeigt:
+
+    - Ein integriertes _Terminal_, um Befehle auszuführen, ohne VS Code zu verlassen.
+
+        *Tipp*: Oft kann Chat GPT bei der Generierung von Befehlen aushelfen. ;-)
+
+    - Ausgabe: Zeigt Debug-Informationen, Ausgaben von Programmen und Log-Meldungen.
+    - Probleme: Zeigt Probleme, wie Fehler oder Warnungen im Code.
+    - Debug-Konsole: Wird während des Debuggens genutzt, um Debugging-Ausgaben anzuzeigen.
+
+---------------
 
 6. **Status Bar (Statusleiste)**
-Die Statusleiste befindet sich ganz unten im Fenster und zeigt nützliche Informationen über das aktuelle Projekt an.
 
-Besonders hilfreich ist hier die Anzeige des Branches, mit dem das Projekt aktuell verknüpft ist. (dazu mehr im Kapitel zu Git)
+    Die Statusleiste befindet sich ganz unten im Fenster und zeigt nützliche Informationen über das aktuelle Projekt an.
+
+    Besonders hilfreich ist hier die Anzeige des Branches, mit dem das Projekt aktuell verknüpft ist. (dazu mehr im Kapitel zu Git)
 
 ### Ein erstes Projekt erstellen
 
 1. **Erstellen eines Workspaces**
-Zunächst ist es immer sinnvoll, einen eigenen Workspace als Sammlung von Projekten oder Dateien, an denen Sie arbeiten, zu erstellen. Indem Sie einen Ordner als Workspace festlegen und diesen öffnen, öffnet VS Code immer alle in diesem Ordner abgelegten Dokumente (inkl. Fotos, Videos oder andere Dateien). Dateien in diesem Ordner können anschließend in Ihren Dokumenten sehr unkompliziert verlinkt werden.
 
-Schritt 1: Klicken Sie in der Activity Bar auf das Explorer-Symbol (📁).
+![workspace](img/leone-venter-VieM9BdZKFo-unsplash.jpg "Foto von [Leone Venter](https://unsplash.com/de/@fempreneurstyledstock?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) auf [Unsplash](https://unsplash.com/de/fotos/magic-keyboard-neben-tasse-und-klickstift-VieM9BdZKFo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)") Zunächst ist es immer sinnvoll, einen eigenen Workspace als Sammlung von Projekten oder Dateien, an denen Sie arbeiten, zu erstellen. Indem Sie einen Ordner als Workspace festlegen und diesen öffnen, öffnet VS Code immer alle in diesem Ordner abgelegten Dokumente (inkl. Fotos, Videos oder andere Dateien). Dateien in diesem Ordner können anschließend in Ihren Dokumenten sehr unkompliziert verlinkt werden.
 
-Schritt 2: Wählen Sie oben in der Seitenleiste „open folder“ oder im Menü (oberste Leiste) „file“ → „open folder“.
+>**Schritt 1:** Klicken Sie in der Activity Bar auf das Explorer-Symbol (📁).
+>
+>**Schritt 2:** Wählen Sie oben in der Seitenleiste „open folder“ oder im Menü (oberste Leiste) „file“ → „open folder“.
+>
+>**Schritt 3:** Wählen Sie den Ordner aus, den Sie als Workspace verwenden möchten. Dieser Ordner wird nun im Explorer angezeigt und alle darin enthaltenen Dateien sind Teil des Workspaces.
+>
+>**Schritt 4:** Sie können später noch weitere Ordner zu diesem Workspace hinzufügen, indem Sie im Menü „file“ → „Add folder to workspace“ auswählen.
 
-Schritt 3: Wählen Sie den Ordner aus, den Sie als Workspace verwenden möchten. Dieser Ordner wird nun im Explorer angezeigt und alle darin enthaltenen Dateien sind Teil des Workspaces.
-
-Schritt 4: Sie können später noch weitere Ordner zu diesem Workspace hinzufügen, indem Sie im Menü „file“ → „Add folder to workspace“ auswählen.
-
+<br>
 
 2. **Erstellen eines Dokuments**
 
-Schritt 1: Klicken Sie im Explorer auf das „+“-Symbol neben dem Projektnamen oder wählen Sie im Menü „file“ → „new file“.
+>**Schritt 1:** Klicken Sie im Explorer auf das „+“-Symbol neben dem Projektnamen oder wählen Sie im Menü „file“ → „new file“.
+>
+>**Schritt 2:** Geben Sie den Dateinamen ein.
+>
+>**Schritt 3:** Die neue Datei wird im Editor geöffnet.
+>
+>**Schritt 4:** Wählen Sie zum Erstellen eines LiaScript Projektes die Sprache _Markdown_ aus - nun können Sie direkt mit dem Schreiben beginnen.
 
-Schritt 2: Geben Sie den Dateinamen ein.
+-----------
+<br>
 
-Schritt 3: Die neue Datei wird im Editor geöffnet.
-
-Schritt 4: Wählen Sie zum Erstellen eines LiaScript Projektes die Sprache _Markdown_ aus - nun können Sie direkt mit dem Schreiben beginnen.
-
->!WCHTIG!: Bei der Wahl der Workspace- und Datei-Namen darauf achten, dass keine Leerzeichen oder Umlaute verwendet werden! Statt eines Leerzeichens einen Unterstrich nutzen. Ansonsten kann der Dev-Server den Pfad nicht öffnen.
-
+<!-- style="background-color: pink;"-->
+>**WICHTIG:** Bei der Wahl der Workspace- und Datei-Namen darauf achten, dass keine Leerzeichen oder Umlaute verwendet werden! Statt eines Leerzeichens einen Unterstrich nutzen. Ansonsten kann der Dev-Server den Pfad nicht öffnen.
 
 ### Tastenkürzel
 
@@ -152,36 +182,38 @@ Für VS Code existiert eine große Anzahl an Shortcuts, welche das Entwickeln ef
 
 1. Mit dem **„Schnell öffnen“-Befehl** können Sie zwischen Dateien und Symbolen wechseln, ohne das Projektverzeichnis durchsuchen zu müssen.
 
-Windows/Linux: Ctrl + P
-Mac: Cmd + P
+    Windows/Linux: `Ctrl + P`
 
-Geben Sie einfach den Namen der Datei ein, um sie zu öffnen.
-Sie könne auch
-@ eingeben, um Symbole innerhalb der Datei zu suchen.
-: eingeben, um zu einer bestimmten Zeilennummer zu springen.
+    Mac: `Cmd + P`
+
+    Geben Sie einfach den Namen der Datei ein, um sie zu öffnen.
+    Sie können auch
+    `@` eingeben, um Symbole innerhalb der Datei zu suchen oder `:`, um zu einer bestimmten Zeilennummer zu springen.
 
 2. Mit der **Suchfunktion** können Sie innerhalb von Dateien oder im gesamten Projekt nach einem bestimmten Inhalt suchen.
 
-Windows/Linux: Ctrl + Shift + F
-Mac: Cmd + Shift + F
+    Windows/Linux: `Ctrl + Shift + F`
 
+    Mac: `Cmd + Shift + F`
 
-3. Sie können innerhalb einer Datei über die **Symbolsuche** schnell zu einem bestimmten Abschnitt springen.
+3. Innerhalb einer Datei kann über die **Symbolsuche** schnell zu einem bestimmten Abschnitt gesprungen werden.
 
-Windows/Linux: Ctrl + Shift + O
-Mac: Cmd + Shift + O
+    Windows/Linux: `Ctrl + Shift + O`
+    Mac: `Cmd + Shift + O`
 
-Mit diesem Shortcut können Sie anschließend schnell zur vorherigen Position zurückkehren:
+    Mit diesem Shortcut können Sie anschließend schnell zur vorherigen Position zurückkehren:
 
-Windows/Linux: Alt + ←
-Mac: Ctrl + -
+    Windows/Linux: `Alt + ←`
 
+    Mac: `Ctrl + -`
 
-4. Mit dem **Multicursor** können Sie gleichzeitig an mehreren Stellen im Code arbeiten.
+4. Der **Multicursor** ermöglicht es, gleichzeitig an mehreren Stellen im Code zu arbeiten.
 
-Windows/Linux: Alt + Klicken
-Mac: Option + Klicken
+    Windows/Linux: `Alt + Klicken`
 
+    Mac: `Option + Klicken`
+
+<br>
 
 >Unter diesen Links finden Sie eine Auflistung weiterer ShortCuts, die das Navigieren in VS Code erleichtern können:
 >
@@ -189,34 +221,33 @@ Mac: Option + Klicken
 >[Keyboard shortcuts für macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) <br>
 >[Keyboard shortcuts für Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 
-
 ### Extensions für VS Code
 
-Extensions können in VS Code selbst gesucht und installiert werden:
-
-1. Extensions-Tab auswählen:
-    ![Extensions Tab](img/vs_code_extensions1.png)
-
-2. Extensions suchen und installieren klicken.
-    ![Extensions Tab, jetzt ausgewählt](img/vs_code_extensions2.png)
+![Extensions Tab, jetzt ausgewählt](img/vs_code_extensions2.png) 
+Extensions können in VS Code selbst gesucht und installiert werden: Hierzu den Extensions-Tab auswählen, Extensions suchen und und auf *install* klicken. 
 
 
 Für VS Code existieren zwei Extensions, welche die Arbeit mit LiaScript deutlich vereinfachen:
 
 * [LiaScript Preview](https://marketplace.visualstudio.com/items?itemName=LiaScript.liascript-preview) bietet eine Vorschau der Markdown-Dokumente als LiaScript-Kurse. 
-        Die Vorschau im Development Server kann gestartet werden, indem Sie in VS Code *Strg* + *Umschalt* + *p* drücken und anschließend *LiaScript Preview ...* eintippen oder einer der folgenden Shortcuts verwenden. Sie haben hierbei die Wahl zwischen <br>
-        - einem live-Mode, in dem gespeicherte Änderungen (Speicherung via strg-s) automatisch aktualisiert werden: [alt+l]    (auf einem Mac [cmd+l]) und <br>
-        - einem manuellen Modus: [alt+shift+l] (auf einem Mac [cmd+shift+l]).
-        Der DevServer lässt sich via [alt+l+c] (auf einem Mac [cmd+l+c]) stoppen.
 
-* [LiaScript Snippets](https://marketplace.visualstudio.com/items?itemName=LiaScript.liascript-snippets) stellt verschiedene Markdown-Snippets zur Verfügung und ermöglicht bspw. auch die schnelle Generierung von Tabellen. Nach der Installation der Extension ist eine weitere Konfiguration notwendig: Hierzu einmal die command line öffnen (*strg-ctrl-p*) und folgenden Code in settings.json eingeben:
+    Die Vorschau im Development Server kann gestartet werden, indem Sie in VS Code `Strg + Umschalt + p` drücken und anschließend *LiaScript Preview ...* eintippen oder einer der folgenden Shortcuts verwenden. Sie haben hierbei die Wahl zwischen <br>
+  
+  - einem **live-Mode**, in dem gespeicherte Änderungen (Speicherung via strg-s) automatisch aktualisiert werden: `alt+l`    (auf einem Mac `cmd+l`) und
+  - einem **manuellen Modus**: [alt+shift+l] (auf einem Mac [cmd+shift+l]).
+
+  Der DevServer lässt sich via `alt+l+c` (auf einem Mac `cmd+l+c`) stoppen.
+
+* [LiaScript Snippets](https://marketplace.visualstudio.com/items?itemName=LiaScript.liascript-snippets) stellt verschiedene Markdown-Snippets zur Verfügung und ermöglicht bspw. auch die schnelle Generierung von Tabellen. 
+
+    Nach der Installation der Extension ist eine weitere Konfiguration notwendig: Hierzu einmal die command line öffnen `strg+ctrl+p` und folgenden Code in *settings.json* eingeben:
 
 ```markdown
-"[markdown]": {
-      "editor.tabCompletion": "on",
-      "editor.quickSuggestions": true,
-      "editor.snippetSuggestions": "top"
-   }
+  "[markdown]": {
+  "editor.tabCompletion": "on",
+  "editor.quickSuggestions": true,
+  "editor.snippetSuggestions": "top"
+  }
 ```
 
 ## Grundlagen: Markdown
@@ -231,14 +262,18 @@ Für VS Code existieren zwei Extensions, welche die Arbeit mit LiaScript deutlic
 
 ### "Standard" Markdown
 
-Der [ursprüngliche Markdown-Standard](https://daringfireball.net/projects/markdown/syntax) umfasst nur wenige Elemente: Überschriften, Aufzählungen, Zitate, Code (Blocks), horizontale Linien, Links, Fett- und Kursivschreibweise, Bilder, sowie die Möglichkeit Syntax-Elemente zu *escapen* (mit einem \\). 
+Der [ursprüngliche Markdown-Standard](https://daringfireball.net/projects/markdown/syntax) umfasst nur wenige Elemente: 
+Überschriften, Aufzählungen, Zitate, Code (Blocks), horizontale Linien, Links, Fett- und Kursivschreibweise, Bilder, sowie die Möglichkeit Syntax-Elemente mit einem \\ zu *escapen*.
 
 Verschiedene *Anbieter* haben diesen ursprünglichen Standard um eigene Elemente erweitert. Mit am bekanntesten ist vermutlich die [Github-Variante](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) von Markdown. 
 
 >Unter den aufgeführten Links können Sie sich einen ersten Überblick über die Markdown-Syntax verschaffen. Ein paar wenige, wichtige Syntax-Elemente werden im Folgenden kurz aufgeführt, um den Einstieg zu erleichtern...
 
-### Metadaten
-Metadaten sind Informationen über das Dokument, die auf dem Hauptteil der Website später nicht sichtbar, aber wichtig für die Verarbeitung und Darstellung des Dokuments sind. In LiaScript werden sie typischerweise am Anfang der Markdown-Datei definiert.
+### Metadaten 
+
+Metadaten sind Informationen über das Dokument, die auf dem Hauptteil der Website später nicht sichtbar, aber wichtig für die Verarbeitung und Darstellung des Dokuments sind. 
+
+In LiaScript werden sie typischerweise am Anfang der Markdown-Datei definiert.
 
 Beispiel:
 
@@ -252,9 +287,11 @@ narrator: UK English Female
 -->
 ```
 #### Macros
+
  Makros spielen eine zentrale Rolle, um interaktive Inhalte und benutzerdefinierte Funktionen zu erstellen. Sie ermöglichen es, eine Gruppe von Befehlen oder Anweisungen zusammenzufassen, um sie als eine Einheit auszuführen.
 
 **Externe Ressourcen laden**
+
 LiaScript ermöglicht es, externe Ressourcen wie CSS-Dateien, JavaScript-Bibliotheken oder andere Skripte zu laden, um die Funktionalität oder das Styling des Dokuments zu erweitern.
 
 Beispiel:
@@ -265,9 +302,10 @@ Beispiel:
 ```
 
 **Import**
-In LiaScript lassen sich Module oder Skripte importieren, um die Wiederverwendbarkeit des Codes zu fördern. Dies ist nützlich, wenn Sie komplexe Skripte in mehreren Dokumenten verwenden möchten.
 
-Verwenden Sie hierzu import-Anweisung..
+In LiaScript lassen sich Module oder Skripte importieren, was nützlich ist, wenn Sie komplexe Skripte in mehreren Dokumenten verwenden möchten.
+
+Verwenden Sie hierzu eine Import-Anweisung..
 
 Beispiel:
 
@@ -278,6 +316,7 @@ Beispiel:
 ```
 
 #### Struktur
+
 Ihre Website können Sie durch Verwendung von Hashtags in Sections (#) und Subsections (mehrere #) organisieren:
 
 ```markdown
@@ -300,7 +339,7 @@ Dies ist ein Untertitel
 Textblöcke
 ----------
 
-> Um Ihren Text in einem Block darzustellen, fügen Sie vor dem Paragraphen ein > ein.
+> Um Ihren Text in einem Block darzustellen, fügen Sie vor dem Paragraphen ein `>` ein.
 >
 >> Es lassen sich sogar Blöcke in Blöcken darstellen.
 >
@@ -321,7 +360,6 @@ Textblöcke
 > ```markdown
 > <!-- style="background-color: lightgreen;"-->
 > ```
-
 
 #### Listen und Tabellen
 
@@ -368,7 +406,7 @@ Mittels der horizentalen Trennlinien steuern Sie die Anordnung der Items...
 | linksbündig   | zentriert     | rechtsbündig  |
 ```
 
-Noch ein Tipp: Wie bei den Textblöcken, lassen sich durch Eintippen des Codes
+*Noch ein Tipp:* Wie bei den Textblöcken, lassen sich durch Eintippen des Codes
 
 ```markdown
  <!-- style="background-color: Farbe;"-->
@@ -376,7 +414,7 @@ Noch ein Tipp: Wie bei den Textblöcken, lassen sich durch Eintippen des Codes
 
 vor die Items die Zellen farblich hinterlegen.
 
->Tabellen sind im ursprünglichen Markdown-Standard nicht vorgesehen und notorisch relativ  anstrengend in Markdown zu erstellen. Es gibt aber hilfreiche Tools, die bei der Erstellung unterstützen, bspw. https://www.tablesgenerator.com/markdown_tables.
+>Tabellen sind im ursprünglichen Markdown-Standard nicht vorgesehen und notorisch relativ  anstrengend in Markdown zu erstellen. Es gibt aber hilfreiche Tools, die bei der Erstellung unterstützen, bspw. https://www.tablesgenerator.com/markdown_tables .
 >
 >Es existiert auch ein [Plugin](https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable) für VS-Code, welches das Erstellen von Tabellen in Markdown erleichtert..
 
@@ -391,7 +429,9 @@ LiaScript stellt weitere Markdown-Syntax zur Verfügung, die insbesondere auf di
 
 Diese *neue* Syntax wird häufig nicht von anderen Markdown-Interpretern unterstüzt und entsprechend falsch, anders oder gar nicht dargestellt.
 
-Ein auf GitHub bereitgestelltes [Cheet-Sheet](https://liascript.github.io/blog/liascript-cheet-sheet/#:~:text=LiaScript%20erlaubt%20das%20impotieren%20und%20die%20Nutzung%20von) gibt einen Überblick über die wichtigsten Syntax-Elemente. 
+>Ein auf GitHub bereitgestelltes [Cheet-Sheet](https://liascript.github.io/blog/liascript-cheet-sheet/#:~:text=LiaScript%20erlaubt%20das%20impotieren%20und%20die%20Nutzung%20von) gibt einen Überblick über die wichtigsten Syntax-Elemente. 
+
+<br>
 
 **Hier ein kleines Quiz als Beispiel:**
 
@@ -632,7 +672,7 @@ flowchart TB
 
 ## Zusammenarbeiten
 
-Hier wird's besonders interessant..
+![Teamwork](img/michal-parzuchowski-KiN4SlyYZEo-unsplash.jpg "Foto von [Michael Parazuchowski](https://unsplash.com/de/@mparzuchowski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) auf [Unsplash](https://unsplash.com/de/fotos/menschen-in-rosa-und-lila-kleidern-die-tagsuber-auf-der-strasse-tanzen-KiN4SlyYZEo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)") Hier wird's besonders interessant..
 
 ### CAU Cloud
 
@@ -642,11 +682,11 @@ Niemals (niemals, nie) sollten LiaScript-Markdown Dateien über den Cloud-Editor
 
 Die CAU Cloud bzw. OwnCloud stellt einen Desktop-Client zur Verfügung, der die Dateien und Verzeichnisse auf den lokalen Rechner synchronisiert. Dadurch ist eine gute Zusammenarbeit möglich. Nähere Informationen dazu gibt es hier: https://www.rz.uni-kiel.de/de/angebote/storage/cau-cloud
 
-### git und Github
+### Git und Github
 
 Noch eine bessere Möglichkeit der Zusammenarbeit bieten das Versionskontrollsystem Git und die darauf aufbauende webbasierte Plattform Github. 
 
-VS Code bietet die Möglichkeit, eigene Projekte mit Git zu verwalten. Dafür ist die vorherige Installation eines [git Clients](https://git-scm.com/downloads) nötig. 
+VS Code bietet die Möglichkeit, eigene Projekte mit Git zu verwalten. Dafür ist die vorherige Installation eines [Git Clients](https://git-scm.com/downloads) nötig. 
 
 Hinweis: Bei der Installation sind die vorab ausgewählten Einstellungen die gängigsten und können, falls keine individuellen Wünsche bestehen, zunächst erst einmal so belassen werden. Sinnvoll (aber nicht notwendig) ist allerdings die Änderung des Branch-Namens auf den aktuellen Standard "main". Branches können aber auch später noch umbenannt, neu erstellt und verwaltet werden. 
 
@@ -662,7 +702,7 @@ Daraus ist auch das folgende Video...
 
 ## Publizieren
 
-Wie kann ich meinen schönen Kurs nun anderen zur Verfügung stellen, bspw. Studierenden? Diese Frage ist derzeit leider noch nicht so einfach zu beantworten.
+![Arbeit am Laptop](img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg "Foto von [Glenn Carstensens Peters](https://unsplash.com/de/@glenncarstenspeters?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) auf [Unsplash](https://unsplash.com/de/fotos/person-die-das-macbook-pro-verwendet-npxXWgQ33ZQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)") Wie kann ich meinen schönen Kurs nun anderen zur Verfügung stellen, bspw. Studierenden? Diese Frage ist derzeit leider noch nicht so einfach zu beantworten.
 
 ### LiaScript Webservice
 
